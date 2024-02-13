@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>CSci 313 - Assignment 2</title>
+        <link rel="stylesheet" href="css/styles.css" type="text/css">
+
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" 
+        rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" 
+        crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" 
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <h2 class="navbar-brand">Jayden Cullen</h2>
+                <ul class="navbar-nav">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Favorite Links</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="https://getbootstrap.com/docs/5.3/getting-started/introduction/">Bootstrap Tutorial</a></li>
+                            <li><a class="dropdown-item" href="https://www.reddit.com/">Reddit</a></li> <!--add links!!!-->
+                            <li><a class="dropdown-item" href="https://www.ndsu.edu/start/">NDSU Start Page</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#" onclick="ChangeContent('pages/bio.html')">Bio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#" onclick="ChangeContent('pages/favorites.html')">Hobbies And Favorite Movies</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#" onclick="ChangeContent('pages/schedule.html')">Schedule</a>
+                    </li>
+                    
+                </ul>
+            </div>
+            
+        </nav>
+        
+        
+    </head>
+    <body>
+        <iframe id="displayContent" src="pages/bio.html" frameborder="0"></iframe>
+    </body>
+    <script>
+        let currentPage = "pages/schedule.html";
+        let ifrContent = document.getElementById("displayContent");
+
+        function ChangeContent(path = ""){
+            ifrContent.src = path;
+        }
+    </script>
+</html>
