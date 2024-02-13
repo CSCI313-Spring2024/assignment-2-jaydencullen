@@ -1,6 +1,6 @@
 .row {
     width: 100%;
-    background-color: gray;
+    background-color: grey;
 }
 .isSchool{
     background-color: green;
@@ -32,6 +32,9 @@ body{
 .bio{
     width: 256px;
     padding: 32px;
+    font-size: large;
+    font-style:initial;
+    color: bisque;
 }
 .card{
     min-height: 512px;
@@ -39,4 +42,7 @@ body{
 }
 .hobbyholder{
     max-width: 1048px;
+}
+.navbar{
+    background-color: gray;
 }
